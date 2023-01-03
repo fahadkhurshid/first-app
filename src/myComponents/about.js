@@ -1,9 +1,9 @@
 import React from 'react'
-import { useLocation, useHistory } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const Index = () => {
     const location = useLocation();
-    const history = useHistory();
+    const navigate = useNavigate();
 
     return (
         <div>
@@ -15,7 +15,7 @@ const Index = () => {
             }
 
             <button className="btn btn-primary"
-            onClick={() => history.push('/index')}>
+            onClick={() => navigate.push('/index')}>
                 Home Page
             </button>
            

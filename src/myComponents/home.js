@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Nav from "./nav";
 import About from "./about";
 import Index from "./index";
@@ -9,12 +9,14 @@ const Home = () => {
     return (
         <BrowserRouter>
             <Nav />
-            <Route path="/index">
-                <Index />
+            <Routes>
+            <Route path="/index" element={<Index />}>
+                
             </Route>
-            <Route path="/about">
-                <About />
+            <Route path="/about" element={<About />}>
+                
             </Route>
+            </Routes>
         </BrowserRouter>
     )
 }

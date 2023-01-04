@@ -15,7 +15,7 @@ const Index = () => {
             }
 
             <button className="btn btn-primary"
-            onClick={() => navigate.push('/index')}>
+            onClick={() => navigate('/index')}>
                 Home Page
             </button>
            
